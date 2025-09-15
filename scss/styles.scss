@@ -1,0 +1,115 @@
+$primary-gradient: linear-gradient(135deg, #6a11cb, #2575fc);
+$card-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+$radius: 12px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  color: #333;
+}
+
+// Hero Section
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: $primary-gradient;
+  color: white;
+
+  .profile-pic img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-bottom: 1rem;
+  }
+
+  .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 10px 20px;
+    background: white;
+    color: #2575fc;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+
+    &:hover {
+      background: #f0f0f0;
+      transform: scale(1.05);
+    }
+  }
+}
+
+// Container
+.container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+// Card
+.card {
+  background: white;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: $radius;
+  box-shadow: $card-shadow;
+
+  h2 {
+    margin-bottom: 1rem;
+    color: #2575fc;
+  }
+}
+
+// Grid
+.grid {
+  display: grid;
+  gap: 1.5rem;
+
+  &.projects {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+// Skills
+.skills span {
+  display: inline-block;
+  background: $primary-gradient;
+  color: white;
+  padding: 8px 12px;
+  margin: 5px;
+  border-radius: 20px;
+  font-size: 14px;
+  box-shadow: $card-shadow;
+}
+
+// Project
+.project img {
+  width: 100%;
+  border-radius: $radius;
+  margin-bottom: 0.5rem;
+  transition: 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: $card-shadow;
+  }
+}
+
+// Footer
+.footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: $primary-gradient;
+  color: white;
+  margin-top: 2rem;
+  border-top-left-radius: $radius;
+  border-top-right-radius: $radius;
+}
